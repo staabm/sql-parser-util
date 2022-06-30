@@ -24,8 +24,6 @@ use const PREG_OFFSET_CAPTURE;
 
 /**
  * Utility class that parses sql statements with regard to types and parameters.
- *
- * @internal
  */
 class SQLParserUtils
 {
@@ -134,7 +132,7 @@ class SQLParserUtils
      * @param mixed[]                                                              $params Query parameters
      * @param array<int, int|string|null>|array<string, int|string|null> $types  Parameter types
      *
-     * @return mixed[]
+     * @return array{string, mixed[], mixed[]}
      *
      * @throws SQLParserUtilsException
      */
